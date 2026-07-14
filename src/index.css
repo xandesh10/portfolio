@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #ff6f4a;
+  --color-facebook : #005fd5;
+  --color-gmail : #ffc91e;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/fonts/Poppins-Bold.ttf");
+
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../src/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/fonts/Roboto-Bold.ttf");
+}
