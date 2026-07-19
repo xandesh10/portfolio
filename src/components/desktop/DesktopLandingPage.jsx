@@ -125,17 +125,17 @@ function DesktopLandingPage() {
                 </p>
 
                 <button
-                  // onClick={() =>
-                  //   document.getElementById("about")?.scrollIntoView({
-                  //     behavior: "smooth",
-                  //     block: "start",
-                  //   })
-                  // }
+                  onClick={() =>
+                    document.getElementById("about")?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    })
+                  }
 
-                  onClick={handleDownload}
+                  // onClick={handleDownload}
                   className="mt-8 rounded-md bg-main px-6 py-3 text-white cursor-pointer hover:bg-orange-600 transition duration-300 hover:scale-105 "
                 >
-                  Download cv
+                  About me
                 </button>
                 <p className="mt-6 text-md text-gray-600 w-119 text-justify">
                   Techbology I work with.

@@ -172,16 +172,16 @@ function MobileLandingPage() {
               </p>
 
               <button
-                // onClick={() =>
-                //   document.getElementById("about")?.scrollIntoView({
-                //     behavior: "smooth",
-                //     block: "start",
-                //   })
-                // }
-                onClick={handleDownload}
+                onClick={() =>
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+                // onClick={handleDownload}
                 className="mt-8 rounded-md bg-main px-8 py-3 text-white hover:bg-orange-600 transition duration-300 hover:scale-105"
               >
-                Download cv
+                About me
               </button>
 
               <p className="mt-8 text-gray-600">Technologies I work with.</p>
