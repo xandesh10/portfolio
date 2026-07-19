@@ -29,14 +29,22 @@ function MobileLandingPage() {
     // { id: "contact", name: "Contact" },
   ];
 
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = "/files/best_cv.pdf";
+  //   link.download = "Sandesh_BK_Resume.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/files/best_cv.pdf";
-    link.download = "Sandesh_BK_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}files/best_cv.pdf`;
+  link.download = "Sandesh_BK_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   const roles = [
     "Full Stack Developer",
