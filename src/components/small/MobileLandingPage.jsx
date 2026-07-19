@@ -29,7 +29,7 @@ function MobileLandingPage() {
     // { id: "contact", name: "Contact" },
   ];
 
-   const handleDownload = () => {
+  const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/files/cv_new.pdf";
     link.download = "Sandesh_BK_Resume.pdf";
@@ -69,53 +69,52 @@ function MobileLandingPage() {
             <h1 className="text-black text-sm font-semibold text-main">
               Portfolio
             </h1>
- <Menu as="div" className="relative inline-block text-left">
-      <MenuButton className="rounded-md bg-main px-4 py-2 text-white">
-        Home
-      </MenuButton>
+            <Menu as="div" className="relative inline-block text-left">
+              <MenuButton className="rounded-md bg-main px-4 py-2 text-white">
+                Home
+              </MenuButton>
 
-      <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black/5 focus:outline-none">
-        <MenuItem>
-          {({ active }) => (
-            <a
-              href="#"
-              className={`block px-4 py-2 text-sm ${
-                active ? "bg-gray-700 text-white" : "text-gray-300"
-              }`}
-            >
-              About
-            </a>
-          )}
-        </MenuItem>
+              <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black/5 focus:outline-none">
+                <MenuItem>
+                  {({ active }) => (
+                    <a
+                      href="#"
+                      className={`block px-4 py-2 text-sm ${
+                        active ? "bg-gray-700 text-white" : "text-gray-300"
+                      }`}
+                    >
+                      About
+                    </a>
+                  )}
+                </MenuItem>
 
-        <MenuItem>
-          {({ active }) => (
-            <a
-              href="#"
-              className={`block px-4 py-2 text-sm ${
-                active ? "bg-gray-700 text-white" : "text-gray-300"
-              }`}
-            >
-              Skills
-            </a>
-          )}
-        </MenuItem>
+                <MenuItem>
+                  {({ active }) => (
+                    <a
+                      href="#"
+                      className={`block px-4 py-2 text-sm ${
+                        active ? "bg-gray-700 text-white" : "text-gray-300"
+                      }`}
+                    >
+                      Skills
+                    </a>
+                  )}
+                </MenuItem>
 
-        <MenuItem>
-          {({ active }) => (
-            <button
-              className={`block w-full text-left px-4 py-2 text-sm ${
-                active ? "bg-gray-700 text-white" : "text-gray-300"
-              }`}
-            >
-              Contact
-            </button>
-          )}
-        </MenuItem>
-      </MenuItems>
-    </Menu>
+                <MenuItem>
+                  {({ active }) => (
+                    <button
+                      className={`block w-full text-left px-4 py-2 text-sm ${
+                        active ? "bg-gray-700 text-white" : "text-gray-300"
+                      }`}
+                    >
+                      Contact
+                    </button>
+                  )}
+                </MenuItem>
+              </MenuItems>
+            </Menu>
 
-           
             {/* <ul className="flex flex-1 justify-center gap-10 text-sm text-black">
               {navItems.map((item) => (
                 <li
@@ -142,82 +141,79 @@ function MobileLandingPage() {
             </button> */}
           </nav>
 
-         <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-16 py-10 gap-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-16 py-10 gap-10">
+            {/* Left Section */}
+            <section className="w-full lg:w-1/2 text-center lg:text-left">
+              <h2 className="text-main text-base md:text-lg font-bold mb-2">
+                Hello, there! I'm
+              </h2>
 
-  {/* Left Section */}
-  <section className="w-full lg:w-1/2 text-center lg:text-left">
-    <h2 className="text-main text-base md:text-lg font-bold mb-2">
-      Hello, there! I'm
-    </h2>
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
+                Software Developer
+              </h1>
 
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
-      Backend Developer
-    </h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
+                Sandesh Bk
+              </h1>
 
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
-      Sandesh Bk
-    </h1>
+              <p className="mt-6 text-gray-600 text-base leading-7 max-w-xl mx-auto lg:mx-0 text-center lg:text-justify">
+                  I'm a Software Developer focused on building reliable,
+                  efficient, and scalable applications. As a passionate fresher,
+                  I'm continuously learning new technologies and eager to solve
+                  real-world problems while contributing to impactful projects.
+              </p>
 
-    <p className="mt-6 text-gray-600 text-base leading-7 max-w-xl mx-auto lg:mx-0 text-center lg:text-justify">
-      I'm a backend developer focused on building reliable and efficient web
-      applications. A passionate fresher, always learning and ready to take on
-      new challenges.
-    </p>
+              <button
+                // onClick={() =>
+                //   document.getElementById("about")?.scrollIntoView({
+                //     behavior: "smooth",
+                //     block: "start",
+                //   })
+                // }
+                onClick={handleDownload}
+                className="mt-8 rounded-md bg-main px-8 py-3 text-white hover:bg-orange-600 transition duration-300 hover:scale-105"
+              >
+                Download cv
+              </button>
 
-    <button
-      // onClick={() =>
-      //   document.getElementById("about")?.scrollIntoView({
-      //     behavior: "smooth",
-      //     block: "start",
-      //   })
-      // }
-      onClick={handleDownload}
-      className="mt-8 rounded-md bg-main px-8 py-3 text-white hover:bg-orange-600 transition duration-300 hover:scale-105"
-    >
-    Download cv
-    </button>
+              <p className="mt-8 text-gray-600">Technologies I work with.</p>
 
-    <p className="mt-8 text-gray-600">
-      Technologies I work with.
-    </p>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-4">
+                <FaJsSquare className="text-4xl" color="#F7DF1E" />
+                <FaReact className="text-4xl" color="#61DAFB" />
+                <SiDjango className="text-4xl" color="#092E20" />
 
-    <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-4">
-      <FaJsSquare className="text-4xl" color="#F7DF1E" />
-      <FaReact className="text-4xl" color="#61DAFB" />
-      <SiDjango className="text-4xl" color="#092E20" />
+                <div
+                  className="w-10 h-10 bg-cover bg-center rounded-full"
+                  style={{ backgroundImage: `url(${py_logo})` }}
+                />
 
-      <div
-        className="w-10 h-10 bg-cover bg-center rounded-full"
-        style={{ backgroundImage: `url(${py_logo})` }}
-      />
+                <div
+                  className="w-10 h-10 bg-cover bg-center rounded-full"
+                  style={{ backgroundImage: `url(${flutter_logo})` }}
+                />
 
-      <div
-        className="w-10 h-10 bg-cover bg-center rounded-full"
-        style={{ backgroundImage: `url(${flutter_logo})` }}
-      />
+                <div
+                  className="w-10 h-10 bg-cover bg-center rounded-full"
+                  style={{ backgroundImage: `url(${figma})` }}
+                />
 
-      <div
-        className="w-10 h-10 bg-cover bg-center rounded-full"
-        style={{ backgroundImage: `url(${figma})` }}
-      />
+                <SiGithub className="text-4xl" color="#181717" />
+              </div>
+            </section>
 
-      <SiGithub className="text-4xl" color="#181717" />
-    </div>
-  </section>
-
-  {/* Right Section */}
-  <section className="w-full lg:w-1/2 flex justify-center">
-    <div
-      className="bg-cover bg-center rounded-full
+            {/* Right Section */}
+            <section className="w-full lg:w-1/2 flex justify-center">
+              <div
+                className="bg-cover bg-center rounded-full
                  w-64 h-64
                  sm:w-80 sm:h-80
                  md:w-96 md:h-96
                  lg:w-[600px] lg:h-[600px]"
-      style={{ backgroundImage: `url(${sa})` }}
-    />
-  </section>
-
-</div>
+                style={{ backgroundImage: `url(${sa})` }}
+              />
+            </section>
+          </div>
         </div>
         <div
           className="about-me w-full bg-main rounded-xl px-6 py-12 md:px-16 text-white"
@@ -240,9 +236,11 @@ function MobileLandingPage() {
               </p>
 
               <p className="text-white text-base md:text-lg leading-8 text-justify font-[Poppins-regular]">
-                I am a passionate Backend Developer and a recent BCA graduate
-                with a strong interest in building secure, scalable, and
-                efficient web applications. 
+                I'm a Software Developer passionate about designing and building
+                reliable, scalable, and efficient applications. As a motivated
+                fresher, I continuously expand my skills, enjoy solving complex
+                problems, and am eager to contribute to innovative software
+                projects.
               </p>
             </div>
 

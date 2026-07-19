@@ -189,10 +189,11 @@ function DesktopLandingPage() {
               </p>
 
               <p className="text-white text-base md:text-lg leading-8 text-justify font-[Poppins-regular]">
-                I'm a Software Developer focused on building reliable,
-                efficient, and scalable applications. As a passionate fresher,
-                I'm continuously learning new technologies and eager to solve
-                real-world problems while contributing to impactful projects.
+                I'm a Software Developer passionate about designing and building
+                reliable, scalable, and efficient applications. As a motivated
+                fresher, I continuously expand my skills, enjoy solving complex
+                problems, and am eager to contribute to innovative software
+                projects.
               </p>
             </div>
 
