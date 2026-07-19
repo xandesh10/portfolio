@@ -34,6 +34,16 @@ function DesktopLandingPage() {
     "Flutter Developer",
     "Django Developer",
   ];
+
+   const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/files/cv_new.pdf";
+    link.download = "Sandesh_BK_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(true);
   console.log(me);
@@ -111,15 +121,17 @@ function DesktopLandingPage() {
                 </p>
 
                 <button
-                  onClick={() =>
-                    document.getElementById("about")?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    })
-                  }
+                  // onClick={() =>
+                  //   document.getElementById("about")?.scrollIntoView({
+                  //     behavior: "smooth",
+                  //     block: "start",
+                  //   })
+                  // }
+
+                  onClick={handleDownload}
                   className="mt-8 rounded-md bg-main px-6 py-3 text-white cursor-pointer hover:bg-orange-600 transition duration-300 hover:scale-105 "
                 >
-                  About Me
+                  Download cv
                 </button>
                 <p className="mt-6 text-md text-gray-600 w-119 text-justify">
                   Techbology I work with.

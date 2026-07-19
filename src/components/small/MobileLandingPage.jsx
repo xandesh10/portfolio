@@ -29,6 +29,15 @@ function MobileLandingPage() {
     // { id: "contact", name: "Contact" },
   ];
 
+   const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/files/cv_new.pdf";
+    link.download = "Sandesh_BK_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const roles = [
     "Full Stack Developer",
     "React Developer",
@@ -156,15 +165,16 @@ function MobileLandingPage() {
     </p>
 
     <button
-      onClick={() =>
-        document.getElementById("about")?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        })
-      }
+      // onClick={() =>
+      //   document.getElementById("about")?.scrollIntoView({
+      //     behavior: "smooth",
+      //     block: "start",
+      //   })
+      // }
+      onClick={handleDownload}
       className="mt-8 rounded-md bg-main px-8 py-3 text-white hover:bg-orange-600 transition duration-300 hover:scale-105"
     >
-      About Me
+    Download cv
     </button>
 
     <p className="mt-8 text-gray-600">
