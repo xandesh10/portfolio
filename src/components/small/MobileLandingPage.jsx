@@ -90,6 +90,12 @@ function MobileLandingPage() {
                       className={`block px-4 py-2 text-sm ${
                         active ? "bg-gray-700 text-white" : "text-gray-300"
                       }`}
+                       onClick={() =>
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
                     >
                       About
                     </a>
@@ -103,6 +109,12 @@ function MobileLandingPage() {
                       className={`block px-4 py-2 text-sm ${
                         active ? "bg-gray-700 text-white" : "text-gray-300"
                       }`}
+                       onClick={() =>
+                  document.getElementById("skills")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
                     >
                       Skills
                     </a>
@@ -115,6 +127,12 @@ function MobileLandingPage() {
                       className={`block w-full text-left px-4 py-2 text-sm ${
                         active ? "bg-gray-700 text-white" : "text-gray-300"
                       }`}
+                       onClick={() =>
+                  document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
                     >
                       Contact
                     </button>
