@@ -37,7 +37,7 @@ function DesktopLandingPage() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/files/cv_new.pdf";
+    link.href = "/files/best_cv.pdf";
     link.download = "Sandesh_BK_Resume.pdf";
     document.body.appendChild(link);
     link.click();
