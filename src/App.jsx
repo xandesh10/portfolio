@@ -5,7 +5,7 @@ import LandingPageRoute from './components/page_routers/LandingPageRoute'
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<LandingPageRoute/>}></Route>
+      <Route path='/portfolio' element={<LandingPageRoute/>}></Route>
     </Routes>
   )
 }

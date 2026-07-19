@@ -35,7 +35,7 @@ function DesktopLandingPage() {
     "Django Developer",
   ];
 
-   const handleDownload = () => {
+  const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/files/cv_new.pdf";
     link.download = "Sandesh_BK_Resume.pdf";
@@ -93,12 +93,15 @@ function DesktopLandingPage() {
               ))}
             </ul>
 
-            <button className="h-8 px-5 rounded-md bg-main text-white text-sm font-medium transition cursor-pointer"  onClick={() =>
-                    document.getElementById("contact")?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    })
-                  }>
+            <button
+              className="h-8 px-5 rounded-md bg-main text-white text-sm font-medium transition cursor-pointer"
+              onClick={() =>
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+            >
               Contact
             </button>
           </nav>
@@ -110,14 +113,15 @@ function DesktopLandingPage() {
                   Hello, there! I'm
                 </h1>
                 <h1 className="text-5xl font-bold leading-tight">
-                  Backend Developer
+                  Software Developer
                 </h1>
                 <h1 className="text-5xl font-bold leading-tight">Sandesh Bk</h1>
 
                 <p className="mt-6 text-md text-gray-600 w-119 text-justify">
-                  I'm a backend developer focused on building reliable and
-                  efficient web applications. A passionate fresher, always
-                  learning and ready to take on new challenges.
+                  I'm a Software Developer focused on building reliable,
+                  efficient, and scalable applications. As a passionate fresher,
+                  I'm continuously learning new technologies and eager to solve
+                  real-world problems while contributing to impactful projects.
                 </p>
 
                 <button
@@ -185,9 +189,10 @@ function DesktopLandingPage() {
               </p>
 
               <p className="text-white text-base md:text-lg leading-8 text-justify font-[Poppins-regular]">
-                I am a passionate Backend Developer and a recent BCA graduate
-                with a strong interest in building secure, scalable, and
-                efficient web applications. 
+                I'm a Software Developer focused on building reliable,
+                efficient, and scalable applications. As a passionate fresher,
+                I'm continuously learning new technologies and eager to solve
+                real-world problems while contributing to impactful projects.
               </p>
             </div>
 
